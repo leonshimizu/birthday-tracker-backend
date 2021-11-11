@@ -11,7 +11,7 @@ class BirthdaysController < ApplicationController
       day: params[:day],
       year: params[:year]
     )
-    # birthday.save
+    birthday.save
     render json: birthday.as_json
   end
 
@@ -26,7 +26,7 @@ class BirthdaysController < ApplicationController
     birthday.month = params[:month] || birthday.month
     birthday.day = params[:day] || birthday.day
     birthday.year = params[:year] || birthday.year
-    # birthday.save
+    birthday.save
     render json: birthday.as_json
   end
 
