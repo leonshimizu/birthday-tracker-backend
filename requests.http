@@ -1,0 +1,28 @@
+### INDEX
+GET http://localhost:3000/birthdays
+
+### CREATE - still need to figure out month
+POST http://localhost:3000/birthdays
+content-type: application/json
+
+{
+  "name": "John Shimizu",
+  "day": 24,
+  "year": 1968
+}
+
+### SHOW
+GET http://localhost:3000/birthdays/1
+
+### UPDATE - still need to figure out momth
+PATCH http://localhost:3000/birthdays/1
+content-type: application/json 
+
+{
+  "name": "Stassie Shimizu",
+  "day": 19,
+  "year": 2019
+}
+
+### DESTOY
+DELETE http://localhost:3000/birthdays/3
